@@ -2,9 +2,10 @@
 <html>
     <body>
         <?php
-        $myScore = 90;
 
-            switch(true) {
+            function gradeMyScore($myScore){
+          
+            switch($myScore) {
                case in_array($myScore, range(70,100)): 
                   echo "A! - Outstanding Score!!";
                break;
@@ -33,9 +34,11 @@
                 echo ("Please enter a valid score between 1 - 100");
 
             }
+          }
 
+          gradeMyScore(16);
+            
+          ?>
 
-        ?>
-     
     </body>
 </html>
