@@ -1,7 +1,16 @@
-<!DOCTYPE html>
 <html>
     <body>
+<form  method="post">
+ 
+  Please supply your score: <input type="text" name="scoreval"><br>
+  <input type="submit" value="Submit">
+</form>
+
+
         <?php
+
+            $scoreval = $_POST['scoreval'];
+            print ($scoreval);
 
             function gradeMyScore($myScore){
           
@@ -36,9 +45,10 @@
             }
           }
 
-          gradeMyScore(16);
+            gradeMyScore($scoreval);
+          
             
           ?>
-
+          
     </body>
 </html>
